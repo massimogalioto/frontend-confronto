@@ -14,7 +14,7 @@ export default function UploadCTE() {
       const res = await fetch("https://backend-offerte-ocr-production.up.railway.app/upload-cte?", {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
+          'x-api-key': process.env.NEXT_PUBLIC_API_KEY,
         },
         body: formData,
       });
