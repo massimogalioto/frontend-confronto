@@ -11,7 +11,7 @@ export default function UploadCTE() {
     formData.append("file", file);
 
     try {
-      const res = await fetch("https://backend-offerte-ocr-production.up.railway.app/upload-cte?madonie_ufficio=cefalu", {
+      const res = await fetch("https://backend-offerte-ocr-production.up.railway.app/upload-cte?", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
