@@ -60,6 +60,7 @@ export default function UploadBolletta() {
       {loading && <p className="text-blue-600">⏳ Analisi in corso...</p>}
       {errore && <p className="text-red-600">❌ {errore}</p>}
 
+       
       {risultato && (
         <div className="bg-gray-100 p-4 rounded shadow space-y-4">
           <h2 className="text-lg font-semibold">📊 Risultato del confronto</h2>
